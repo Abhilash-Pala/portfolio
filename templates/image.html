@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 20px; /* Adjust as needed */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .card1 {
+            width: 13rem;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card1-img-top {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .card1:hover .card1-img-top {
+            transform: scale(1.10);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <img src="abhi.JPG" class="card-img-top" alt="nature">
+        </div>
+    </div>
+</body>
+</html>

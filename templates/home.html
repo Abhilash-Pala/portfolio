@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/mobile.css') }}">
+
+    <title>Document</title>
+    
+    
+    <!--fontawesome script-->
+    <script src="https://kit.fontawesome.com/6db161e47e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="three" style="background-color: black;">
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="one">Portfolio</a>
+      <button style="background-color:#fce4ec;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home"  id="one">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" tabindex="-1" aria-disabled="true" id="one">Skills</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#certifications"  id="one">Certifications</a>
+          </li>
+         
+
+          <li class="nav-item dropdown " >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <li><a class="dropdown-item" href="#carrer" style="color: black;">Carrer Objective</a></li>
+              <li><a class="dropdown-item" href="#strength" style="color: black;">Strengths</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#" style="color: black;">Curricular Activities</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="{{url_for('download_resume')}}" id="one">Resume</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#contactForm" id="one">Contact</a>
+          </li>
+         
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+    
+  <br/><br/>
+  <section class="container2" id="home">
+    <div class="two">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='abhi.JPG') }}" alt="Image" id="blinking-text" class="responsive-image">
+
+               <!-- <img src="abhi.JPG" class="card-img-top" alt="Image" id="blinking-text" class="responsive-image"> -->
+
+    </div>
+    
+        <h3 style="color:white;font-weight: bold;font-style: italic;">Hello, It's Me</h3>
+        <h3 style="color:white;font-weight: bold;font-style: italic;">Pala Abhilash</h3>
+        <h4 style="color:white;font-weight: bold;font-style: italic;">And I'm a Python Full Stack Developer</h4>
+
+        <p style="color:white; font-weight: bold;font-style: italic;">
+            As a recent graduate and fresher in full stack development, I have a strong foundation in Python,
+            Flask, HTML, CSS, and MySQL, with hands-on experience in designing and developing responsive
+            web pages. My skills in both frontend and backend development enable me to create seamless,
+            user-friendly web applications.
+        </p>
+    </div>
+</section>
+
+<!--Skills-->
+<div class="container" id="skills" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.T3mkxdRILwCUVRWkvuPvqQHaEo&pid=Api&P=0&h=180');">
+  <div class="skills-wrapper">
+      <!-- First Skills Container -->
+      <div class="skills-container">
+          <h3><center>Technical Skills</center></h3>
+          <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 90%;">90%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">CSS</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 80%;">80%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">ReactJS</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 70%;">70%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Python</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 85%;">85%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Flask</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 80%;">80%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">MySQL</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 83%;">83%</div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Second Skills Container -->
+      <div class="skills-container">
+          <h3><center>Professional Skills</center></h3>
+          <div class="skill">
+              <div class="skill-name">Creativity</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 90%;">90%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Communication</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 80%;">85%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Project Management</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 70%;">75%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Team Management</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 85%;">85%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Decision Making</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 80%;">80%</div>
+              </div>
+          </div>
+          <div class="skill">
+              <div class="skill-name">Active Listening</div>
+              <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 83%;">90%</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+ 
+ 
+  <!--certificates-->
+   <h1 style="color:white;">Certificates</h1>
+   <section class="container" id="certifications"  style="background-color: rgb(12, 107, 124);border-radius: 15px;">
+    <div class="card">
+      <img src="{{ url_for('static', filename='python_basic certificate (1)_page-0001.jpg') }}" alt="Image" class="card-img-top">
+
+        <!-- <img src="python_basic certificate (1)_page-0001.jpg" class="card-img-top" alt="Python Basic Certificate"> -->
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='sql_basic certificate (1)_page-0001.jpg') }}" alt="Image" class="card-img-top">
+        <!-- <img src="sql_basic certificate (1)_page-0001.jpg" class="card-img-top" alt="SQL Basic Certificate"> -->
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='sql intermediate.jpg') }}" alt="Image" class="card-img-top">
+        <!-- <img src="sql intermediate.jpg" class="card-img-top" alt="SQL Intermediate Certificate"> -->
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='css certificate_page-0001.jpg') }}" alt="Image" class="card-img-top">
+        <!-- <img src="css certificate_page-0001.jpg" class="card-img-top" alt="CSS Certificate"> -->
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='freecode camp1.png') }}" alt="Image" class="card-img-top">
+        <!-- <img src="freecode camp1.png" class="card-img-top" alt="FreeCodeCamp Certificate"> -->
+    </div>
+</section> 
+<br/><br/>
+
+<section style="border-radius: 15px;" id="carrer">
+  <div class="container1">
+    <div class="text-section">
+       <h1>Career Objective</h1>
+       <center> <div class="image-section">
+        <img src="https://c4.wallpaperflare.com/wallpaper/116/883/732/students-studying-motivational-minimalism-wallpaper-preview.jpg" alt="Motivational Image"/>
+    </div></center>
+        <h6>
+            I am eager to join an organization that offers me the opportunity to showcase my skills and expand my knowledge.
+            I am enthusiastic about working in a challenging environment where I can continually grow and develop.
+            My goal is to contribute effectively while striving for excellence in all aspects of my work.
+            I am committed to embracing new challenges and pushing boundaries to achieve exceptional results.
+        </h6>
+       
+    </div>
+   
+</div>
+  <br/><br/>
+  
+</section><br/>
+<section id="strength">
+  <div class="container1">
+    <div class="text-section">
+      <h1>Strengths</h1>
+      <center><div class="image-section">
+        <img src="https://st2.depositphotos.com/1004061/6399/i/450/depositphotos_63993111-stock-photo-man-rolling-huge-ball-up.jpg" />
+   
+       </div></center>
+      <p style="text-align: left; font-family: Georgia, serif;color:white">
+        My strengths lie in building responsive websites, and hard work.
+        I have a passion for creating web pages that adapt seamlessly to different devices,
+        ensuring an optimal user experience across all platforms. My problem-solving skills enable me to tackle challenges head-on,
+        finding efficient and effective solutions. I am dedicated and hardworking,
+        consistently putting in the effort needed to overcome obstacles and achieve my goals.
+      </p>
+       </div>
+       
+  </div>
+</section>
+
+
+<section id="strength">
+  <div class="container1">
+    <div class="text-section">
+      <h1>About Me</h1>
+      <center><div class="image-section">
+       
+        <img src="{{ url_for('static', filename='abhilash.jpg') }}">
+      
+       </div></center>
+      <p style="text-align: left; font-family: Georgia, serif;color:white">
+        I am a passionate software developer specializing in Python with expertise in Flask, MySQL,
+         HTML, CSS, and ReactJS. I excel at building responsive web applications,
+          combining backend efficiency with dynamic frontend interfaces.
+           My projects showcase a blend of problem-solving skills and attention to detail,
+            reflecting my commitment to delivering high-quality solutions. 
+            With a solid foundation in full-stack development,
+             I am dedicated to creating user-centric, functional, and visually appealing web applications
+      </p>
+       </div>
+       
+  </div>
+</section>
+
+
+
+
+ 
+</div>
+
+ 
+    <form id="contactForm" method="post" action="{{url_for('contact')}}" >
+     <h1> <center style="color:white;">contact</center></h1>
+        <label for="name">Enter your name:</label><br/>
+        <input type="text" id="name" name="name" required><br/>
+        <label for="email">Enter your email:</label><br/>
+        <input type="email" id="email" name="email" required><br/>
+        <label for="largeTextarea">Comment:</label><br/>
+        <textarea id="largeTextarea" name="Comment" rows="10" cols="31"></textarea><br/>
+        <button type="submit" class="btn" style="background-color: #ffeb3b;">Contact us</button><br/>
+    </form>    
+
+<br/><br/><br/>
+
+<div class="ambica">
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Abhilash-Pala">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+      <!-- <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li> -->
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/abhilash-pala-5a1910293/?originalSubdomain=in">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/palaabhilash3/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+      <!-- <li class="menu__item"><a class="menu__link" href="#">Services</a></li> -->
+      <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+      <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 Abhilash pala | All Rights Reserved</p>
+  </footer>
+  
+</div>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const comment = document.getElementById('largeTextarea').value;
+
+    if (name && email && comment) {
+        alert('Thank you for contacting us, ' + name + '! We have received your message.');
+        this.submit(); // Submit the form after showing the alert
+    } else {
+        alert('Please fill in all fields before submitting.');
+    }
+});
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> 
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Percentage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .skills-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skill {
+            margin-bottom: 20px;
+        }
+        .skill-name {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .skill-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-percentage {
+            height: 20px;
+            line-height: 20px;
+            background-color: aquamarine;
+            text-align: right;
+            padding-right: 10px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 90%;">90%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">reactjs</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 70%;">70%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 85%;">85%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Flask</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 75%;">75%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">MySQL</div>
+            <div class="skill-bar">
+                <div class="skill-percentage" style="width: 80%;">80%</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Percentage Bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .circular-progress {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: conic-gradient(#4d5bf9 0deg, #cadcff 0deg);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circular-progress .value-container {
+            position: absolute;
+            font-size: 30px;
+            font-weight: 700;
+            /* color: #4d5bf9; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circular-progress">
+            <div class="value-container">0%</div>
+        </div>
+    </div>
+
+    <script>
+        const circularProgress = document.querySelector('.circular-progress');
+        const progressValue = document.querySelector('.value-container');
+        
+        let progressStartValue = 0,    
+            progressEndValue = 85,    
+            speed = 3;
+            
+        let progress = setInterval(() => {
+            progressStartValue++;
+            
+            progressValue.textContent = `${progressStartValue}%`
+            circularProgress.style.background = `conic-gradient(
+                #4d5bf9 ${progressStartValue * 3.6}deg,
+                #cadcff ${progressStartValue * 3.6}deg
+            )`
+            
+            if(progressStartValue === progressEndValue){
+                clearInterval(progress);
+            }    
+        }, speed);
+    </script>
+</body>
+</html>

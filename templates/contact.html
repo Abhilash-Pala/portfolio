@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        } */
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            border-radius: 5px;
+            font-size: 20px;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
+        form {
+            background-color: rgb(181, 232, 215);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            height: auto;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
+        button {
+            border-radius: 15%;
+            background-color:yellow;
+            color: black;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
+        button:hover {
+            background-color: rgb(10, 248, 53);
+        }
+        @media (max-width: 768px) {
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+            label {
+                font-size: 16px;
+            }
+            input, textarea {
+                font-size: 18px;
+            }
+            button {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            form {
+                width: 95%;
+                padding: 10px;
+            }
+            label {
+                font-size: 14px;
+            }
+            input, textarea {
+                font-size: 16px;
+            }
+            button {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form id="contactForm" method="post">
+            <label for="name">Enter your name:</label><br/>
+            <input type="text" id="name" name="name" required><br/>
+            <label for="email">Enter your email:</label><br/>
+            <input type="email" id="email" name="email" required><br/>
+            <label for="largeTextarea">Comment:</label><br/>
+            <textarea id="largeTextarea" name="Comment" rows="10" cols="31"></textarea><br/>
+            <button type="submit">Contact us</button><br/>
+        </form>    
+    </center>
+</body>
+</html>
